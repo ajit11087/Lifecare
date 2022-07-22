@@ -1,0 +1,803 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Playfair+Display:wght@500&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Overpass:wght@300&family=Playfair+Display:wght@500&family=Roboto+Slab:wght@800&family=Ubuntu&family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Libre+Baskerville&family=Overpass:wght@300&family=Playfair+Display:wght@500&family=Roboto+Slab:wght@800&family=Ubuntu&family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Libre+Baskerville&family=Overpass:wght@300&family=Playfair+Display:wght@500&family=Roboto+Slab:wght@800&family=Ubuntu&family=Yanone+Kaffeesatz&family=Zilla+Slab:wght@300&display=swap');
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+*::selection{
+    color:#fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+.btn{
+    text-shadow:1px 1px 1px black;
+    box-shadow: 0 0 0 1px white;
+    font-size: 3rem;
+    border-radius: 25px;
+    border-top-left-radius: 0px;
+    padding: 10px;
+    border-color:white;
+    background-color: transparent;
+    color:white;
+    font-weight: bolder;
+    transition: all 0.5s;
+    margin-top:10px;
+    
+}
+
+
+.btn:hover{
+    z-index: 2;
+    transform: scale(1.2);
+    color:black;
+    background-color: #ed6436;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color:#555;
+    padding:1rem;
+    padding-top: 7rem;
+}
+
+.heading i{
+    color:#ed6436;
+    font-size: 2rem;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    word-spacing: 2px;
+    background:#fff;
+    color: #ed6436;
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+    position: fixed;
+    top:0; left:0;
+    z-index: 1000;
+    padding: 1rem 5rem;
+    width: 100%;
+}
+
+.logo img {
+    position:absolute;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-weight: 900;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-size: 3rem;
+    
+
+}
+
+header .logo{
+    font-family:'Times New Roman', Times, serif;
+    margin-left: 20px;
+    font-size: 5rem;
+    text-shadow: 4px 2px 3px black;
+}
+
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header .navbar ul li{
+    margin:0 1rem;
+}
+
+header .navbar ul li a{
+    font-size: 2.3rem;
+    margin-right: 05px;;
+    color:black;
+    font-weight:600;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Playfair Display', serif;
+      
+}
+
+.navbar .nav a:hover{
+    color:#ed6436;
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+.dn{
+    
+    background-color: #ed6436;
+    text-decoration: none;
+    padding:8px 30px 8px 30px;
+    font-weight: 900;
+    border-radius: 30px;
+    
+}
+
+.dn a:hover{
+    font-weight: bolder;
+    color:white;
+    font-size: 2.5rem;
+}
+
+.navbar .nav{
+    margin-right: 50px;
+   
+}
+.home{
+    padding-top: 500px;
+    margin-top: 80px;
+    height: 130vh;
+    width: 100%;
+    align-items: left;
+    justify-content: center;
+    background: url(pub.png) no-repeat;
+    background-position:center;
+    position: relative;
+    
+}
+
+#title h1{
+    padding-top:80px;
+    margin-bottom: 800px;
+    font-size: 75px;
+    color:#139BEC;
+    text-shadow:3px 2px 5px black;
+    padding-left: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#title span{
+    text-shadow:5px 2px 5px black;
+    font-style: bolder;
+}
+.home{
+    display:flex;
+    align-items: left;
+    justify-content: left;
+    padding:5rem;
+}
+.content{
+    padding-top: 200px;
+    margin-top: 430px;
+    position: absolute;
+    align-items: center
+    justify-content;
+    padding: 5px;
+}
+.content h1{
+    text-shadow:2px 2px 2px white;
+    font-size: 45px;
+    padding-left: 250px;
+    justify-content: center;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Ubuntu', sans-serif;
+    }
+.content p{
+    font-size: 2.7rem;
+    letter-spacing: 2px;
+    color: whitesmoke;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Overpass', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-shadow:2px 2px 2px black;
+}
+.content span{
+    text-shadow:3px 3px 5px rgba(248, 44, 7, 0.945);
+}
+.content .btn{
+   
+   justify-content: center;
+   margin-left: 460px;
+   margin-top: 5px;
+}
+ 
+
+
+.footer{
+    margin-top: 5rem;
+    background:#333;
+}
+
+.footer .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 98%;
+    margin:0 auto;
+}
+
+.footer .box-container .box{
+    margin:2rem;
+    flex:1 1 25rem;
+}
+
+.footer .box-container .box .logo{
+    font-size: 3rem;
+    color:#ed6436;
+}
+
+.footer .box-container .box p{
+    font-size: 1.7rem;
+    color:#ccc;
+    padding:1rem 0;
+}
+
+.footer .box-container .box .share{
+    text-align:center;
+    font-size: 3rem;
+    color:#fff;
+}
+
+
+.footer .box-container .box:nth-child(2) a{
+    text-align: center;
+    font-size: 5px;
+    color:#eee;
+    display: block;
+    padding:.1rem 0;
+}
+
+.footer .box-container .box:nth-child(2) a:hover{
+    text-decoration: underline;
+}
+
+.footer .box-container .box .letter{
+    font-size: 3rem;
+    color:#fff;
+}
+
+.footer .box-container .box form input[type="email"]{
+    padding:0 1rem;
+    outline:none;
+    border:.2rem solid #ed6436;
+    background:none;
+    font-size: 1.7rem;
+    color:#fff;
+    height:4rem;
+    width:74%;
+}
+
+.footer .box-container .box form button{
+    outline:none;
+    border:none;
+    background:#ed6436;
+    font-size: 1.9rem;
+    color:#fff;
+    height:4rem;
+    width:25%;
+    cursor: pointer;
+   
+}
+
+.footer .box-container .box form button:hover{
+    color:#ed6436;
+    background:none;
+    border:.1rem solid #ed6436;
+}
+
+.footer .credit{
+    text-align: center;
+    color:#fff;
+    font-size: 2rem;
+    width:85%;
+    margin:0 auto;
+    padding:2rem 1rem;
+    border-top: .1rem solid #ccc;
+}
+
+.footer .credit span{
+    color:#ed6436;
+}
+
+.logo{ 
+    width:100% ;
+    color:#ed6436;
+    font-weight: bold;
+    text-shadow:4px 1px 5px black;
+}
+
+.about{
+    margin-bottom: 10rem;
+}
+.about .row{
+    position: absolute;
+    top:197%;
+    left: 44%;
+    transform: translate(-50%,-50%);
+    padding-top: 70px;
+    display: flex;
+    margin-top: 10rem;
+}
+
+.about .heading{
+    padding-top: 10rem;
+    margin-top: 20px;
+    
+}
+.about .heading h1{
+    margin-top: 50px;
+}
+.about .row{
+    margin-top: 90px;
+}
+
+.about .row .image{
+    width: 1190px;
+    flex:0 0  150px;
+
+}
+
+.about .row .image img{
+    max-width: 460%;
+    margin-bottom: 60px;
+}
+
+.about .row .content{
+    left:60%;
+    padding-left: 10px;
+    margin-top: 1px;
+    padding-top: 2px;
+    font-size: 2.5rem;
+}
+.row .content h3{
+    left:70%
+    font-size;
+    font-weight: 800;
+    padding-top: 3px;
+    color: #ed6436;
+    text-shadow: 1px 2px 1px rgb(247, 247, 14);
+}
+.row .content p{
+    text-align: justify;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    font-weight: 400;
+    padding-top: 10px;
+    color:rgb(99, 99, 78);
+    text-shadow:1px 1px 1px black;
+}
+.row .content .btn{
+    margin-left: 90px;
+    margin-top: 20px;
+    border-color: #ed6436;
+    color: black;
+}
+
+.service{
+    padding-top: 5rem;
+    background:#f0f0f0;
+    min-height: 100vh;
+    margin-top: 700px;
+}
+.service .box-container{
+    margin:20px 0;
+
+}
+
+.service .box-container .box{
+    padding: 10px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    border: text-shadow;
+    border-right: 5px solid rgb(252, 69, 69);
+    border-left: 5px solid rgb(253, 102, 102);
+    background: linear-gradient(to right,#fc4872,#ff4b2b);
+}
+
+.box-container .box h3{
+    font-size: 3rem;
+    
+}
+.box-container .box p{
+    font-size: 2rem;
+    padding: 10px;
+    font-weight: 700;
+    padding-bottom: 50px;
+}
+.box-container .box i{
+    font-size: 7rem;
+}
+
+.box .button{
+    margin-top: 10px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: rgb(8, 8, 8);
+    color: #fff;
+    font-size: 17px;
+    padding: 5px 18px;
+    border-radius: 40px;
+    letter-spacing: 1.5px;
+    margin-top: 30px;
+    align-items: flex-end;
+}
+.service .box-container .box:hover{
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,.4);
+    text-shadow:0px 1px 1px white;
+    
+}
+.box .button:hover{
+    background-color: white;
+    color:black;
+    font-weight:800;
+
+}
+.box-container .heading{
+    margin-bottom: 90px;
+}
+.project{
+    padding-top: 5rem;
+    margin-top: 100px;
+}
+.project .box-container{
+    margin-bottom: 100px;
+
+}
+
+.project .box-container p{
+    font-size: 2.5rem;
+    padding:15px;
+    font-weight:900;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Overpass', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: 'Zilla Slab', serif;
+}
+.project .box-container h1{
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Overpass', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.cards h4{
+    font-size: 25px;
+    text-align: center;
+}
+.cards h6{
+     padding :15px;
+     text-align: center;
+     font-size: 1.5rem;
+}
+.cards{
+    margin:0px;
+    padding: 0px;
+    width: 23%;
+    display: inline-block;
+    border-radius: 5px;
+    margin-left: 15px;
+    box-shadow: 2px 2px 10px black;
+    margin-top: 20px;
+    
+}
+
+.p1{
+    text-align:center;
+    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+   
+}
+.p1 img{
+    margin-left:1px ;
+    padding:1px 2px 2px 5px;
+    width: 300px;
+    height: 200px;
+
+   
+}
+.p1des{
+ padding: 10px;
+ padding-left:3px;
+
+ text-align: center;
+}
+.p1des button{
+       margin:30p;
+       padding: 10px;
+       border-radius: 5px;
+       font-family: sans-serif;
+       font-weight: bolder;
+       text-align: center;
+       font-size: 1.5rem;
+       background: linear-gradient(to right,#c5b68b,#ed6436);
+
+}
+.project button:hover{
+    text-align: center;
+    background-color: black;
+    color: cornsilk;
+    font-size: 2rem;
+    text-shadow: 1px 2px 2px black;
+}
+
+.donate{
+    position: relative;
+    z-index: 0;
+    min-height: 50vh;
+    padding-bottom: 3rem;
+    padding-top: 10rem;
+}
+
+.donate .heading h1{
+    color:#fff;
+    margin-top: 500rem;
+}
+
+.donate .form-container form{
+    width:80%;
+    margin:auto;
+    padding:3rem;
+    background:rgba(255,255,255,.1);
+    backdrop-filter: blur(.4rem);
+    box-shadow: 0 .3rem .5rem #000;
+    text-align: center;
+    border-top: .1rem solid rgba(255,255,255,.3);
+    border-left: .1rem solid rgba(255,255,255,.3);
+}
+
+.donate .form-container form .inputBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.donate .form-container form .inputBox input, select{
+    height:2rem;
+    width: 40%;
+    background:#fff;
+    color:#333;
+    padding:0 1rem;
+    margin:1rem 0;
+    font-size: 1.7rem;
+    outline: none;
+    border:none;
+}
+
+.donate .form-container form textarea{
+    height:20rem;
+    width: 100%;
+    background:#fff;
+    color:rgb(15, 15, 15);
+    padding:1rem;
+    margin:1rem 0;
+    font-size: 1.7rem;
+    outline: none;
+    border:none;
+    resize: none;
+}
+
+.donate .form-container form input[type="submit"]{
+    color:rgb(12, 12, 12);
+    border-color: #ed6436;
+}
+
+.donate .form-container form input[type="submit"]:hover{
+    color:#ed6436;
+    border-color:#ed6436;
+    background:#fff;
+}
+
+
+
+
+.help{
+    padding-top: 10rem;
+    background-color: #FFD64C;;
+}
+
+.help .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.help .box-container .box{
+    padding:3rem;
+    text-align: center;
+    border:.2rem solid #ed6436;
+    flex:1 1 20rem;
+    margin:3rem;;
+    margin-bottom: 100px;
+}
+
+.help .box-container .box i{
+    color:whitesmoke;
+    font-size: 5rem;
+    text-shadow: 2px 1px 4px black;
+}
+
+.help .box-container .box h3{
+    color:rgb(247, 241, 241);
+    font-size: 2.5rem;
+    padding:1rem 0;
+    text-shadow: 2px 1px 4px black;
+}
+
+.help .box-container .box p{
+    color:rgb(24, 23, 23);
+    font-size: 1.7rem;
+}
+.help .box-container .box a{
+     padding: 15px;
+     margin: 10px;
+     font-size: 1.5rem;
+     font-weight:bolder;
+     background-color: #fda708;
+     color:black;
+
+}
+.box-container .box a:hover{
+    font-size:2rem ;
+}
+
+
+.help .row{
+     display: flex;
+     flex-direction:column;
+     justify-content: space-around;
+     flex-wrap: wrap;
+}
+
+.help .row .image{
+    flex:1 1 40rem;
+    padding:5rem;
+}
+
+.help .row .image img{
+    width: 40%;
+    padding-left: 70px;
+    padding-bottom: 15px;
+}
+
+.help .row .content{
+    flex:1 1 40rem;
+    padding:2rem;
+    padding-left: 100px;
+    padding-bottom: 600px;
+    text-align: center;
+    padding-left: 600px;
+    padding-top: 50px;
+}
+
+.help .row .content h3{
+    font-size: 5rem;
+    padding-top: 60px;
+    color: #ed6436;
+   
+}
+
+.help .row .content p{
+    font-size: 3rem;
+    color:#666;
+    padding-left: 500px;
+    padding:1rem 0;
+    
+}
+.help .row .content .btnn{
+     padding: 15px;
+     margin: 10px;
+     font-size: 2rem;
+     font-weight:bolder;
+     color:black;
+     border-radius: 15px;
+     margin-right:80px;
+     margin-top: 40px;
+     background: linear-gradient(to right,rgb(252, 186, 5),#ff4406);
+}
+
+#volunteer{
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+}
+#adopt{
+    padding-top: 10rem;
+}
+#DONATE{
+    padding-top: 10rem;
+}
+.content .btnn:hover{
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,.4);
+}
+
+
+.Contact .image img{
+     width: 50%;
+    padding-left: 70px;
+    padding-bottom: 15px;
+    padding-top:200px;
+    
+}
+
+.Contact .contact-page{
+    padding-top: 10rem;
+    background-color: #efefef;
+    font-family: sans-serif;
+}
+.contact-page .form-container{
+     width: 500px;
+     margin-top: 690rem;;
+     background-color: #fff;
+     box-shadow: 0 0 20px 0 #999;
+     top:50%;
+     left:72%;
+     transform: translate(-50%,-50%);
+     position: absolute;
+    
+}
+
+.form-container .input-field{
+   width:400px;
+   height:40px;
+   margin-top: 20px;
+   padding:10px;
+   margin-left: 35px;
+   padding-right: 10px;
+   border:1px solid #777;
+   border-radius: 14px;
+   outline:none;
+  
+}
+.input-field-textarea{
+    height: 100px;
+    width: 400px;
+    border-radius: 14px;
+    padding-top: 30px;
+    margin-left: 35px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.inputBox .btnn{
+    border-radius: 20px;
+    color:#fff;
+    margin-top: 18px;
+    padding:10px;
+    background-color: #47c35a;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    margin:5px 20px 20px 25px;
+}
+
+.inputBox h1{
+    margin-left: 15rem;
+    padding:10px;
+    font-size: 3rem;
+}
